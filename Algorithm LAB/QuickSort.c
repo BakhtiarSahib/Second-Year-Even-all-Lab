@@ -39,12 +39,7 @@ int quicksort(int arr[], int first, int last)
 
         quicksort(arr,first,j-1);
         quicksort(arr,j+1,last);
-
-
-
     }
-
-
 
 }
 
