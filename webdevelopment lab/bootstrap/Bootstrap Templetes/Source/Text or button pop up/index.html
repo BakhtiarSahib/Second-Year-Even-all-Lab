@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<title>Bootstrap Tutorial | ITBari.com</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	
+
+	<div class="container">
+		
+		
+		<h2 class="my-5">Tooltip:</h2>
+		
+		<span class="btn btn-primary" title="<strong>this</strong> is title" data-toggle="tooltip" data-trigger="click" data-placement="right" data-html="true">Sample Text</span>
+		
+		<h2 class="my-5">Popover:</h2>
+		
+		<span class="btn btn-primary" title="this is title" data-toggle="popover" data-trigger="click" data-placement="right" data-html="true" data-content="This is our data content and this is a <b>very large</b> text">Sample Text</span>
+
+		
+	</div>
+	
+
+
+	<!-- JavaScript Files -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip();
+			$('[data-toggle="popover"]').popover();
+		});
+	</script>	
+</body>
+</html>

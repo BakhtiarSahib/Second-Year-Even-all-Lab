@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<title>Bootstrap Tutorial | ITBari.com</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/style.css" />
+
+	</head>
+<body>
+	
+
+	<div class="container">
+		
+		<h2>Carousel:</h2>
+		
+		<div class="carousel slide d-none d-sm-block" data-ride="carousel" id="demo">
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/slider-1.jpg" alt="" class="img-fluid" />
+				</div>
+				<div class="carousel-item">
+					<img src="img/slider-2.jpg" alt="" class="img-fluid" />
+					<div class="carousel-caption d-none d-md-block">
+						<h2 class="text-danger">This is our carousel caption heading</h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+						<a href="#" class="btn btn-warning">Click Here</a>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="img/slider-3.jpg" alt="" class="img-fluid" />
+				</div>				
+			</div><!-- carousel-inner -->
+			
+			<a href="#demo" class="carousel-control-prev" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a href="#demo" class="carousel-control-next" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>			
+			
+		</div><!-- carousel -->
+
+	</div>
+	
+
+
+	<!-- JavaScript Files -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>	
+	<script>
+		$('.carousel').carousel({
+			interval: 1000,
+			pause: false
+		})
+	</script>
+</body>
+</html>
